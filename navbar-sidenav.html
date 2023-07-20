@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font awesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Navbar & Sidenav</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="amber darken-4">
+            <div class="nav-wrapper">
+              <div class="container">
+                 <a href="" class="brand-logo">
+                    <i class="fa-brands fa-github"></i>
+                 </a>
+                 <ul id="nav-mobile" class="right hide-on-med-and-down">
+                     <li class="active">
+                         <a href="">Home</a>
+                     </li>
+                     <li>
+                         <a href="">About</a>
+                     </li>
+                     <li>
+                         <a href="">Contact Us</a>
+                     </li>
+                 </ul>
+              </div>
+            </div>
+         </nav>
+    </div>
+    <h1 class="center">
+        <div class="container">
+                <i class="fa-solid fa-bars left small menu hide-on-large-only"></i>
+            Navbar
+        </div>
+    </h1>
+    <div class="divider"></div>
+    <div class="container">
+        <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.
+        </p>
+
+        <br><br>
+        <h3>Right Aligned Links</h3>
+        <p>To right align your navbar links, just add a right class to your <'ul'> that contains them.</p>
+        <nav class="blue lighten-2">
+           <div class="nav-wrapper">
+             <div class="container">
+                <a href="" class="brand-logo">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Contact Us</a>
+                    </li>
+                </ul>
+             </div>
+           </div>
+        </nav>
+
+        <br><br>
+        <!-- Left Aligned Links -->
+        <h3>Left Aligned Links</h3>
+        <p>To left align your navbar links, just add a left class to your <'ul'> that contains them.</p>
+
+        <nav class="deep-orange">
+            <div class="nav-wrapper">
+              <div class="container">
+                 <a href="" class="brand-logo right">
+                    <i class="fa-brands fa-instagram"></i>
+                 </a>
+                 <ul id="nav-mobile" class="left hide-on-med-and-down">
+                     <li>
+                         <a href="">Home</a>
+                     </li>
+                     <li>
+                         <a href="">About</a>
+                     </li>
+                     <li>
+                         <a href="">Contact Us</a>
+                     </li>
+                 </ul>
+              </div>
+            </div>
+         </nav>
+
+         <br><br>
+         <!-- Centering the logo -->
+         <h3>Centering the logo</h3>
+         <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your <'a class="brand-logo"'>. You will have to make sure yourself that links do not overlap if you use this.</p>
+         <nav class="brown darken-4">
+            <div class="nav-wrapper">
+              <div class="container">
+                 <a href="" class="brand-logo center">
+                    <i class="fa-brands fa-github"></i>
+                 </a>
+                 <ul id="nav-mobile" class="left hide-on-med-and-down">
+                     <li>
+                         <a href="">Home</a>
+                     </li>
+                     <li>
+                         <a href="">About</a>
+                     </li>
+                     <li>
+                         <a href="">Contact Us</a>
+                     </li>
+                 </ul>
+              </div>
+            </div>
+         </nav>
+
+         <br><br>
+         <!-- Extended Navbar with Tabs -->
+         <h3>Extended Navbar with Tabs
+        </h3>
+        <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+        <nav class="nav-extended blue-grey darken-4">
+           <div class="nav-wrapper">
+             <a href="" class="brand-logo center">
+                <i class="fa-brands fa-codepen"></i>
+                <a href="#" class="sidenav-trigger" data-target="mobile-demo">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+             </a>
+           </div>
+           <div class="nav-content">
+            <ul class="tabs tabs-transparent">
+               <li class="tab">
+                  <a href="#following">Following</a>
+               </li>
+               <li class="tab">
+                  <a href="#trending">Trending</a>
+               </li>
+               <li class="tab">
+                  <a href="">Your Work</a>
+               </li>
+            </ul>
+           </div>
+        </nav>
+
+        <!-- Tabs structure -->
+        <div class="row blue-grey darken-4">
+            <!-- folowing -->
+            <div class="col s12" id="following">
+                <div class="card-panel blue-grey darken-3">
+                  <!-- Switch -->
+                    <div class="switch">
+                        <label>
+                        Recent
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        Top
+                        </label>
+                    </div>
+                </div>
+               <section class="section section-following-content">
+                <div class="container">
+                    <h5 class="center white-text">You aren't following anyone yet! Maybe you could find some people to follow in <span class="light-blue-text">Trending</span> ?</h5>
+                   </div>
+               </section>
+            </div>
+            <!-- Trending -->
+            <div class="col s12" id="trending">
+               <section class="section">
+                  <div class="row">
+                    <div class="col s6">
+                        <div class="card blue-grey darken-3">
+                            <div class="card-image">
+                                <img src="images/img2.jpg" alt="" class="materialboxed">
+                            </div>
+                            <div class="card-content">
+                                <i class="fa-brands fa-discord small white-text left"></i>
+                                <span class="white-text">Nested Respecful Man
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                                <p class="white-text">Adam Argyle</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <div class="card blue-grey darken-3">
+                            <div class="card-image">
+                                <img src="images/img3.jpg" alt="" class="materialboxed">
+                            </div>
+                            <div class="card-content">
+                                <i class="fa-brands fa-discord small white-text left"></i>
+                                <span class="white-text">Nested Respecful Man
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                                <p class="white-text">Adam Argyle</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+               </section>
+            </div>
+        </div>
+
+        <!-- sidenav structure -->
+        <ul class="sidenav blue-grey darken-4" id="mobile-demo">
+            <li>
+                <a href="">
+                    <h5 class="center white-text">CODEPEN
+                        <i class="fa-brands fa-codepen"></i>
+                    </h5>
+                </a>
+            </li>
+            <li>
+                <div class="progress">
+                    <div class="determinate" style="width: 100%"></div>
+                </div>
+               <div class="card-panel blue-grey darken-3">
+                <a href="">
+                    <h6 class="white-text">
+                        <span class="text-blue-grey text-darken-2">
+                            <i class="fa-solid fa-calendar"></i>
+                        </span>
+                        Pen
+                        <i class="fa-solid fa-caret-down right white-text"></i>
+                    </h6>  
+                 </a>
+               </div>
+               <div class="card-panel blue-grey darken-3">
+                <a href="">
+                    <h6 class="white-text">
+                        <span class="text-blue-grey text-darken-2">
+                            <i class="fa-solid fa-table-cells-large"></i>
+                        </span>
+                        Collection
+                        <i class="fa-solid fa-caret-down right white-text"></i>
+                    </h6>  
+                 </a>
+               </div>
+            </li>
+            <li>
+                <a href="" class="white-text">Your Work</a>
+            </li>
+            <li>
+                <a href="" class="white-text">Activity</a>
+            </li>
+            <li>
+                <a href="" class="white-text">Assets</a>
+            </li>
+            <li>
+                <a href="" class="white-text">Pinned Items</a>
+            </li>
+            <li>
+                <a href="" class="white-text">Following</a>
+            </li>
+            <li>
+                <a href="" class="white-text">Trending</a>
+            </li>
+            <li>
+                <a href="" class="white-text">Challenges</a>
+            </li>
+            <li>
+                <a href="" class="white-text">Spark</a>
+            </li>
+            <li>
+                <a href="" class="white-text">
+                    CodePen
+                    <i class="fa-brands fa-codepen right yellow-text"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div style="height: 1000px;"></div>
+    
+    
+     
+
+
+      <!-- Jquery CDN -->
+      <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+     <script>
+        $(document).ready(function() {
+            // sidenav init
+            $('.sidenav').sidenav();
+            // tabs init
+            $('.tabs').tabs();
+        });
+     </script>
+</body>
+</html>
